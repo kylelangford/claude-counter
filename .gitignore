@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# Data files
+*.log
+
+# macOS
+.DS_Store
+
+# ESP32 firmware credentials
+firmware/claude_counter/config.h
+
+# Arduino build artifacts
+firmware/**/*.elf
+firmware/**/*.bin
+firmware/**/build/

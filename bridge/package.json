@@ -1,0 +1,18 @@
+{
+  "name": "claude-meter-bridge",
+  "version": "1.0.0",
+  "description": "Local data bridge for Claude Usage Meter",
+  "main": "server.cjs",
+  "scripts": {
+    "start": "node server.cjs",
+    "mock": "MOCK_MODE=true node server.cjs",
+    "serial": "node serial-bridge.cjs",
+    "serial:mock": "MOCK_MODE=true node serial-bridge.cjs"
+  },
+  "keywords": ["claude", "usage", "meter"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "serialport": "^12.0.0"
+  }
+}

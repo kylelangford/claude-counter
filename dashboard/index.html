@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=320, height=240, initial-scale=1.0, user-scalable=no">
+  <title>Claude Meter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="meter">
+    <!-- Header -->
+    <header class="header">
+      <span class="logo">CLAUDE</span>
+      <span class="status" id="status">--</span>
+    </header>
+
+    <!-- Primary Usage Block (5-hour or Context) -->
+    <section class="usage-block" id="primary-block">
+      <div class="usage-header">
+        <span class="usage-label" id="primary-label">5-HOUR</span>
+        <span class="usage-value" id="primary-value">--%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="primary-bar"></div>
+      </div>
+      <div class="countdown" id="primary-countdown">--:--:--</div>
+    </section>
+
+    <!-- Secondary Usage Block (7-day or Cost) -->
+    <section class="usage-block" id="secondary-block">
+      <div class="usage-header">
+        <span class="usage-label" id="secondary-label">7-DAY</span>
+        <span class="usage-value" id="secondary-value">--%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="secondary-bar"></div>
+      </div>
+      <div class="countdown" id="secondary-countdown">--d --h</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span class="updated" id="context">Ctx --</span>
+      <span class="updated" id="updated">Updated: --</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
